@@ -4,62 +4,62 @@
     "name": "Мулан",
     "description": " Мулан ждет эпичное путешествие, которое превратит её в доблестного воина, позволит заслужить уважение народа и стать гордостью отца",
     "price": 439,
-    "image": "..assets/images/mulan.webp"
+    "image": "assets/images/mulan.webp"
   },
   {
     "id": 2,
     "name": "Начало",
     "description": "Шпионаж фантастического уровня. С помощью сверхтехнологии герой Ди Каприо и его команда проникают в чужие сны",
     "price": 329,
-    "image":"..assets/images/inception.webp"
+    "image":"assets/images/inception.webp"
   },
   {
     "id": 3,
     "name": "Достать ножи",
     "description": "Остроумный детектив в духе Агаты Кристи, населенный нетипичными персонажами и вывернутый наизнанку",
     "price": 269,
-    "image": "..assets/images/knives out.webp"
+    "image": "assets/images/knives out.webp"
   },
   {
     "id": 4,
     "name": "Гренландия",
     "description":"Огромная комета мчится к Земле и угрожает уничтожить планету. Конец света кажется неизбежным. Единственное безопасное место – бункер в далекой Гренландии.",
     "price": 339 ,
-    "image": "..assets/images/Greenland.webp"
+    "image": "assets/images/Greenland.webp"
   },
   {
     "id": 5,
     "name": "Форд против Феррари" ,
     "description": "Биография знаменитого гонщика Кена Майлза и драма об искренней и чистой любви к быстрой езде",
     "price": 339,
-    "image": "..assets/images/ford v ferrari.webp"
+    "image": "assets/images/ford v ferrari.webp"
   },
   {
     "id": 6,
     "name":"Мстители: война бесконечности",
     "description": "Предпоследний фильм о суперкоманде Marvel. Титан Танос вынашивает страшный план – угрозу всей Вселенной",
     "price": 339,
-    "image": "..assets/images/avengers infinity war.webp"
+    "image": "assets/images/avengers infinity war.webp"
   },
   {
     "id": 7,
     "name": "Мстители: финал",
     "description": "Оставшиеся в живых члены команды Мстителей и их союзники должны разработать новый план, который поможет противостоять разрушительным действиям могущественного титана Таноса" ,
     "price": 329,
-    "image": "..assets/images/avengers endgame.webp"
+    "image": "assets/images/avengers endgame.webp"
   },
   {
     "id": 8,
     "name": "Джокер",
     "description": "Один из самых обсуждаемых фильмов года — драма о дефиците чуткости, превращающем клоуна в злодея",
     "price": 39,
-    "image": "..assets/images/joker.webp"
+    "image": "assets/images/joker.webp"
   },
   {
     "id": 9,
     "name": "Довод" ,
     "description": "После теракта в киевском оперном театре агент ЦРУ объединяется с британской разведкой, чтобы противостоять русскому олигарху, который сколотил состояние на торговле оружием",
     "price": 429,
-    "image": "..assets/images/tellnet.webp"
+    "image": "assets/images/tellnet.webp"
   }
   ]
