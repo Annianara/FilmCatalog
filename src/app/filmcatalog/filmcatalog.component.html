@@ -1,0 +1,16 @@
+<!----<div class="flex-center" *ngFor = "let film of filmInfo" ></div> -->
+
+<app-navbar></app-navbar>
+<!--<div class="container">-->
+<div>
+  <h1 class="header text-center">Каталог фильмов</h1>
+</div>
+  <div class="row">
+<div *ngIf = "filmInfo | async as films" class="dashboard">
+  <app-film-info class="row"  *ngFor="let film of films" class="box col-xl-3 col-lg-6"  [film] = film>
+  </app-film-info>
+</div>
+  </div>
+
+<!--</div>-->
+

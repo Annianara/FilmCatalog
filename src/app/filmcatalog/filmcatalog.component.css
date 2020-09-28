@@ -1,0 +1,23 @@
+.dashboard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.header
+{
+  text-shadow: rgba(173,77,255,0.78) 0 0 10px;
+  /*background: linear-gradient(-45deg, rgba(173,77,255,0.78), rgba(255,96,189,0.78));*/
+  color: rgba(255,96,189,0.78);
+  margin: 2rem;
+}
+.box{
+  /*width: 30%;*/
+  /*margin-top: 2rem;*/
+  background-color: white;
+  margin: 1.8rem;
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  min-height: 30rem ;
+}
