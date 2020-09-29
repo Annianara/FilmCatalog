@@ -2,6 +2,8 @@
 body{
   background-color: dimgrey;
   background-image: url("assets/background/Backgrounds_Just_a_gray_background_095362_10.jpg");
-  background-size: cover;
+  /*background-size: contain;*/
+  /*background-size: 50%;*/
+  /*max-width:1500px;*/
 
 }

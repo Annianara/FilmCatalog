@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FavListService} from "../shared/fav-list.service";
 
 
 export interface Filminfo {
@@ -14,13 +13,13 @@ export interface Filminfo {
 @Component({
   selector: 'app-film-info',
   templateUrl: './film-info.component.html',
-  styleUrls: ['./film-info.component.css']
+  styleUrls: ['../favorites/favorites.component.css']
 })
 export class FilmInfoComponent implements OnInit {
   @Input() film;
   isClicked = false;
 
-  constructor(private favlist: FavListService) {
+  constructor() {
   }
   ngOnInit(): void {
     if(Object.keys(localStorage).includes(this.film.name))
@@ -34,15 +33,8 @@ export class FilmInfoComponent implements OnInit {
     if (this.isClicked) {
       localStorage.removeItem(film.name)
     } else {
-      // localStorage.setItem('testObject', JSON.stringify(film))
       localStorage.setItem(film.name, JSON.stringify(film))
       console.log(localStorage.getItem(film.name))
-
-
-      let k = localStorage.getItem(film.name)
-      // for (let m of Object.values(k))
-      //   console.log(m)
-      this.favlist.filmlist.push(film)
     }
     this.isClicked = !this.isClicked
 

@@ -2,5 +2,6 @@
   /*height: 2.5rem;*/
   /*margin: -15px -0.6rem 0 -6px;*/
   background: linear-gradient(-45deg, rgba(173,77,255,0.78), rgba(255,96,189,0.78));
-
+  width: 100vw;
+  /*min-width: 1536px;*/
 }
