@@ -9,17 +9,12 @@ body{
 
 .container
 {
-  /*background: linear-gradient(-45deg, rgba(173,77,255,0.78), rgba(255,96,189,0.78));*/
-  border-radius: 8px;
-  /*background: white;*/
-  /*background-color: rgba(255,239,242,0.7);*/
-
+ border-radius: 8px;
 }
 .dashboard{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /*justify-content: left;*/
 }
 
 .header
@@ -29,14 +24,13 @@ body{
 }
 .box{
   width: 30%;
-  /*background-color: rgba(255,239,242,0.2);*/
   background-color: rgba(255,239,242,0.7);
   margin: 0.5rem;
   border-radius: 8px;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  /*min-height: 45rem;*/
+
   min-width: 21rem;
-  /*border: solid;*/
+  border: 1px solid;
 }
 
 .nofavorites{
