@@ -1,22 +1,13 @@
 <div class="text-center">
-  <div class="img">
-  <img class="image mt-5" src="{{film.image}}">
-  </div>
-  <div class="description">
-    <h3 class="text-uppercase mt-4 ">{{film.name}}</h3>
-    <h5 class="text-left">О фильме:</h5>
-    <p class="text-justify"> {{film.description}}
-
-<!--  <quill-view-html [content] = "film.image"></quill-view-html>-->
-    <p class="text-left"><span><b>Цена: </b></span>{{film.price}} руб.</p>
-
-<!--    <div *ngIf="isClicked">В избранном</div>-->
-  </div>
-  <em [class.invisible]="!isClicked"><b>В избранном</b></em>
-<!--  <em [style.class]="!isClicked?'span-shadow':'removebtn'"><b>В избранном</b></em>-->
-
-  <button  [ngClass]="{'removebtn': isClicked,'span-shadow':!isClicked, 'btn':true,'btn-block': true}"
-          (click)="add_to_favourites(film)">{{isClicked? "Убрать из избранного":"Добавить в избранное"}} </button>
-  <!--  <p class ="span-shadow">Добавить в избранное </p>-->
-
+<ul class="list-unstyled">
+  <li> <img class="image mt-5" src="{{film.image}}"></li>
+  <li class="title"><h3 class="text-uppercase mt-4">{{film.name}}</h3></li>
+    <li class="description"><p></p>
+<!--      <h5 class="text-left">О фильме:</h5>--><p class="text-justify"> {{film.description}}</li>
+  <li class="price"><p class="text-center"><span><b>Цена: </b></span>{{film.price}} руб.</p></li>
+  <li><button [ngClass]="{'removebtn': isClicked,'span-shadow':!isClicked, 'btn':true,'btn-block': true}"
+          (click)="add_to_favourites(film)">{{isClicked ? "Убрать из избранного" : "Добавить в избранное"}} </button>
+    </li>
+ <li> <em [class.invisible]="!isClicked" class="infav"><b>В избранном</b></em> </li>
+</ul>
 </div>

@@ -1,28 +1,30 @@
 <app-navbar></app-navbar>
-<div>
-  <h1 class="header text-center display-4">Избранное</h1>
-</div>
-<div class="totalsum alert alert-secondary text-center "><b>Общая стоимость: {{totalsum}} руб.</b></div>
-<div class="row">
-  <div *ngIf = "favList&&favList.length!=0; else nofavorites" class="dashboard">
-<div *ngFor="let film of favList" class="box col-xl-2">
-  <div class="text-center">
-    <img class="image mt-4" src="{{film.image}}">
-    <div class="text-center">
-      <div class="description">
-        <h3 class="text-center text-uppercase mt-4 ">{{film.name}}</h3>
-      <p class="text-justify">{{film.description}}</p>
-        <p class="text-left"><span><b>Цена: </b> </span>{{film.price}} руб.</p>
-    </div>
-      <button class ="btn btn-block removebtn" (click)="remove_item(film)"> Убрать из избранного </button>
+
+  <h1 class="header display-4 text-center">Избранное</h1>
+<div class="totalsum alert alert-secondary text-center lead font-weight-bold">Общая стоимость: {{totalsum}} руб.</div>
+
+<div class="row text-center">
+  <div class="container">
+  <div *ngIf="favList.length!=0; else nofavorites" class="dashboard mx-auto">
+    <div *ngFor="let film of favList" class="box col-xl-2">
+      <div>
+        <ul class="list-unstyled">
+          <li> <img class="image mt-5" src="{{film.image}}"></li>
+            <li class="title"><h3 class="text-uppercase mt-4">{{film.name}}</h3></li>
+            <li class="description"><p></p>
+              <!--      <h5 class="text-left">О фильме:</h5>--><p class="text-justify"> {{film.description}}</li>
+            <li class="price"><p class="text-center"><span><b>Цена: </b></span>{{film.price}} руб.</p></li>
+
+          <li><button class="btn btn-block removebtn" (click)="remove_item(film)"> Убрать из избранного</button></li>
+        </ul>
+        </div>
     </div>
   </div>
   </div>
 </div>
-</div>
 
+<ng-template #nofavorites>
+  <h3 class="nofavorites mx-auto">Нет избранных фильмов
+  </h3>
+</ng-template>
 
-  <ng-template #nofavorites>
-      <h3 class="text-center nofavorites mx-auto" >Нет избранных фильмов
-      </h3>
-  </ng-template>

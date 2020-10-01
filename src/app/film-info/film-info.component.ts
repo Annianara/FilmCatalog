@@ -13,7 +13,7 @@ export interface Filminfo {
 @Component({
   selector: 'app-film-info',
   templateUrl: './film-info.component.html',
-  styleUrls: ['../favorites/favorites.component.css']
+  styleUrls: ['../../styles_t.css']
 })
 export class FilmInfoComponent implements OnInit {
   @Input() film;
@@ -21,12 +21,11 @@ export class FilmInfoComponent implements OnInit {
 
   constructor() {
   }
+
   ngOnInit(): void {
-    if(Object.keys(localStorage).includes(this.film.name))
-    {
+    if (Object.keys(localStorage).includes(this.film.name)) {
       this.isClicked = true
-    }
-    else this.isClicked = false
+    } else this.isClicked = false
   }
 
   add_to_favourites(film) {
@@ -37,6 +36,5 @@ export class FilmInfoComponent implements OnInit {
       console.log(localStorage.getItem(film.name))
     }
     this.isClicked = !this.isClicked
-
   }
 }

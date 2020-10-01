@@ -5,7 +5,7 @@ import {Filminfo} from '../film-info/film-info.component';
 @Component({
   selector: 'app-filmcatalog',
   templateUrl: './filmcatalog.component.html',
-  styleUrls: ['./filmcatalog.component.css']
+  styleUrls: ['../../styles_t.css']
 })
 export class FilmcatalogComponent implements OnInit {
   filmInfo
