@@ -25,6 +25,13 @@ export class FavoritesComponent implements OnInit {
     this.calc_sum()
   }
 
+  remove_all()
+  {
+    localStorage.clear()
+    this.favList = Object.values(localStorage).map(f => <Filminfo>JSON.parse(f))
+    this.calc_sum()
+  }
+
   calc_sum() {
     this.totalsum = this.favList.reduce((sum, cur) => sum + cur.price, 0)
   }

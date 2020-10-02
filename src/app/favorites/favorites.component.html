@@ -1,11 +1,13 @@
 <app-navbar></app-navbar>
 
   <h1 class="header display-4 text-center">Избранное</h1>
-<div class="totalsum alert alert-secondary text-center lead font-weight-bold">Общая стоимость: {{totalsum}} руб.</div>
 
 <div class="row text-center">
   <div class="container">
-  <div *ngIf="favList.length!=0; else nofavorites" class="dashboard mx-auto">
+    <div class="totalsum alert  text-center  font-weight-bold">Общая стоимость: {{totalsum}} руб.</div>
+
+    <div *ngIf="favList.length!=0; else nofavorites">
+    <div class="dashboard mx-auto">
     <div *ngFor="let film of favList" class="box col-xl-2">
       <div>
         <ul class="list-unstyled">
@@ -18,7 +20,10 @@
           <li><button class="btn btn-block removebtn" (click)="remove_item(film)"> Убрать из избранного</button></li>
         </ul>
         </div>
+
     </div>
+  </div>
+    <button class=" btn lead alert removeall" (click)="remove_all()"> Очистить список</button>
   </div>
   </div>
 </div>
