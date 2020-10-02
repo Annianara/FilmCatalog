@@ -23,17 +23,17 @@ export class FilmInfoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (Object.keys(localStorage).includes(this.film.name)) {
+    if (Object.keys(localStorage).includes(this.film.id)) {
       this.isClicked = true
     } else this.isClicked = false
   }
 
   add_to_favourites(film) {
     if (this.isClicked) {
-      localStorage.removeItem(film.name)
+      localStorage.removeItem(film.id)
     } else {
-      localStorage.setItem(film.name, JSON.stringify(film))
-      console.log(localStorage.getItem(film.name))
+      localStorage.setItem(film.id, JSON.stringify(film))
+      // console.log(localStorage.getItem(film.name))
     }
     this.isClicked = !this.isClicked
   }

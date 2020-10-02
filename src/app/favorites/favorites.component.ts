@@ -20,7 +20,7 @@ export class FavoritesComponent implements OnInit {
   }
 
   remove_item(film) {
-    localStorage.removeItem(film.name)
+    localStorage.removeItem(film.id)
     this.favList = Object.values(localStorage).map(f => <Filminfo>JSON.parse(f))
     this.calc_sum()
   }
